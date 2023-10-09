@@ -212,7 +212,9 @@ public class Scanner {
                     break;
             }
         }
-
+        if(!lexema.equals("")){
+        Interprete.error(0,"\" Expected");
+        }//Para los strings incompletos
 
         return tokens;
     }
